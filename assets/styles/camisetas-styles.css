@@ -1,0 +1,282 @@
+/* camisetas-styles.css */
+
+.navbar {
+    padding: 20px;
+    background-color: #171717; /* Fondo negro */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Letras blancas */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Logo */
+.navbar-brand.logo img {
+    height: 50px; /* Ajusta la altura del logo */
+}
+
+/* Ícono de Login (Font Awesome) */
+.navbar-brand.login-icon i {
+    color: #888888; /* Blanco por defecto */
+    transition: color 0.3s ease;
+}
+
+/* Hover en el ícono de Login */
+.navbar-brand.login-icon i:hover {
+    color: #ffffff;
+}
+
+/* Botón hamburguesa (para móvil) */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* Sección de Camisetas de Fútbol */
+.camisetas-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #000000;
+}
+
+.camisetas-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+/* Grid de Camisetas */
+.camisetas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
+    grid-auto-flow: row;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.camiseta-item {
+    width: 220px; /* Ancho de cada camiseta */
+    text-align: center;
+}
+
+.camiseta-img {
+    width: 100%;
+    height: 250px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin deformarse */
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Efecto suave al hacer hover */
+}
+
+.camiseta-item:hover .camiseta-img {
+    transform: scale(1.05); /* Agranda ligeramente la imagen al pasar el mouse */
+}
+
+/* Estilos para el texto debajo de cada camiseta */
+.camiseta-text {
+    margin-top: 10px;
+}
+
+.camiseta-text .nombre {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.camiseta-text .precio {
+    font-size: 1.2rem;
+    color: #8ba6d2; /* Azul para el precio */
+}
+
+footer {
+    background-color: #171717; /* Fondo negro */
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content_footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profil, .service_area {
+    flex: 1;
+    margin: 10px;
+}
+
+.logo_area {
+    display: flex;
+    align-items: center;
+}
+
+.logo_area img {
+    margin-right: 10px;
+}
+
+.logo_name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.desc_area p {
+    padding-right: 20px;
+    margin: 10px 0;
+}
+
+.social_media a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.service_area ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service_area ul li {
+    margin: 5px 0;
+}
+
+.service_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+}
+
+.service_area ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.service_area ul li a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #555;
+    margin: 20px 0;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.footer_bottom .copy_right, .footer_bottom .sou {
+    margin: 10px;
+}
+
+.sou a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.sou a:hover {
+    text-decoration: underline;
+}
+/* Estilos generales para pantallas grandes (por defecto) */
+
+/* Responsividad */
+@media (max-width: 1200px) {
+    .camisetas-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 992px) {
+    .camisetas-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+
+    .navbar-brand.logo img {
+        height: 40px; /* Ajustar el tamaño del logo para pantallas más pequeñas */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem; /* Reducir el tamaño de la fuente de la barra de navegación */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Barra de navegación */
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    /* Camisetas */
+    .camisetas-grid {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+
+    .camiseta-item {
+        width: 100%; /* Hacer que los elementos ocupen todo el ancho disponible */
+    }
+
+    .camiseta-img {
+        height: 200px; /* Reducir la altura de las imágenes en pantallas pequeñas */
+    }
+
+    /* Footer */
+    .content_footer {
+        flex-direction: column; /* Apilar los elementos verticalmente en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajustes para pantallas muy pequeñas (móviles) */
+
+    .navbar-brand.logo img {
+        height: 35px; /* Reducir el logo aún más para pantallas muy pequeñas */
+    }
+
+    .camisetas-section h2 {
+        font-size: 2rem; /* Reducir el tamaño del encabezado */
+    }
+
+    .camiseta-img {
+        height: 180px; /* Ajustar la altura de las imágenes para pantallas pequeñas */
+    }
+
+    footer {
+        padding: 15px 0; /* Ajustar el padding del footer */
+    }
+
+    .social_media a {
+        font-size: 18px; /* Reducir el tamaño de los iconos de redes sociales */
+    }
+}
+
+

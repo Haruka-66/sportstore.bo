@@ -1,0 +1,375 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px;
+    background-color: #000000; /* Fondo negro */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Letras blancas */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Logo */
+.navbar-brand.logo img {
+    height: 50px; /* Ajusta la altura del logo */
+}
+
+/* Ícono de Login (Font Awesome) */
+.navbar-brand.login-icon i {
+    color: #888888; /* Blanco por defecto */
+    transition: color 0.3s ease;
+}
+
+/* Hover en el ícono de Login */
+.navbar-brand.login-icon i:hover {
+    color: #ffffff;
+}
+
+/* Botón hamburguesa (para móvil) */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.banner-section {
+    position: relative;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 500px; /* Altura del banner */
+    overflow: hidden;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-img {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 100%; /* Ajusta la altura para cubrir la sección */
+    object-fit: cover; /* Mantiene la proporción de la imagen sin estirarse */
+    object-position: top; /* Asegura que la parte superior de la imagen siempre esté visible */
+}
+
+.banner-text {
+    position: absolute;
+    top: 8.75rem;
+    left: 4.6875rem;
+    color: rgb(255, 255, 255); /* Texto blanco */
+    font-size: 1.2rem; /* Tamaño del texto */
+}
+.articulos{
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+/* Sección Selección por Deportes */
+.sports-section {
+    margin-right: 20px;
+    margin-left: 20px;
+
+    text-align: left;
+    padding: 50px;
+}
+
+.sports-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 40px;
+}
+.sports-section h2:hover{
+    color: #424242;
+}
+/* Grid de imágenes */
+.sports-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre las imágenes */
+}
+
+.sport-item {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Imagen por defecto con filtro oscuro */
+.sport-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(0.6); /* Aplica un filtro oscuro */
+    transition: filter 0.3s ease; /* Suaviza la transición */
+}
+
+/* Al hacer hover, se quita el filtro */
+.sport-item:hover .sport-img {
+    filter: brightness(1); /* Vuelve a la imagen original */
+}
+
+.sport-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Sección de Novedades */
+.novedades-section {
+    margin-right: 20px;
+    margin-left: 20px;
+
+    text-align: left;
+    padding: 50px;
+}
+
+.novedades-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+/* Grid de Novedades */
+.novedades-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.novedad-item {
+    width: 200px; /* Ancho de cada item */
+    text-align: center;
+}
+
+.novedad-img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin deformarse */
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Efecto suave al hacer hover */
+}
+
+.novedad-item:hover .novedad-img {
+    transform: scale(1.05); /* Agranda ligeramente la imagen al pasar el mouse */
+}
+
+/* Estilos para el texto */
+.novedad-text {
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.novedad-text .nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.novedad-text .precio {
+    font-size: 1.1rem;
+    color: #007bff;
+    text-decoration: none; /* Sin subrayado */
+}
+
+
+.novedad-text p {
+    text-decoration: none;
+    color: #333; /* Cambia el color del texto a un gris oscuro */
+}
+
+
+/* Estilos del footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content_footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profil, .service_area {
+    flex: 1;
+    margin: 10px;
+}
+
+.logo_area {
+    display: flex;
+    align-items: center;
+}
+
+.logo_area img {
+    margin-right: 10px;
+}
+
+.logo_name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.desc_area p {
+    padding-right: 20px;
+    margin: 10px 0;
+}
+
+.social_media a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.service_area ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service_area ul li {
+    margin: 5px 0;
+}
+
+.service_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+}
+
+.service_area ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.service_area ul li a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #555;
+    margin: 20px 0;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.footer_bottom .copy_right, .footer_bottom .sou {
+    margin: 10px;
+}
+
+.sou a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.sou a:hover {
+    text-decoration: underline;
+}
+.messi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.messi img {
+    max-width: 28%; /* Ajuste de tamaño más pequeño */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .messi img {
+        max-width: 70%; /* Aumenta el tamaño en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .messi img {
+        max-width: 90%; /* Aún más grande en pantallas muy pequeñas */
+    }
+}
+
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .novedades-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .novedad-item {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .banner-text {
+        top: 4rem; /* Ajustado en rem para pantallas medianas */
+        left: 1rem; /* Ajustado en rem para pantallas medianas */
+        font-size: 0.9rem; /* Tamaño de texto más pequeño */
+    }
+    .sports-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sport-item {
+        width: 100%;
+        max-width: 350px; /* Ajusta el ancho máximo en pantallas pequeñas */
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text {
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
+
+
+
